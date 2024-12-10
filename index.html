@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login/Sign Up Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Login/Sign Up Form</h2>
+
+<div>
+  <label for="userType">Login as :</label>
+  <select id="userType">
+    <option value="patient">Patient</option>
+    <option value="hospital">Hospital</option>
+  </select>
+</div>
+
+<button id="loginBtn">Login</button>
+<button id="signupBtn">Sign Up</button>
+
+<div id="loginForm" style="display: block;">
+  <h3>Login Form</h3>
+  <form id="loginForm">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+<div id="signupForm" style="display: none;">
+  <h3>Sign Up Form</h3>
+  <form id="signupForm">
+    <label for="newUsername">New Username:</label><br>
+    <input type="text" id="newUsername" name="newUsername"><br>
+    <label for="newPassword">New Password:</label><br>
+    <input type="password" id="newPassword" name="newPassword"><br><br>
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+
+<p id="message"></p>
+
+<script src="login.js"></script>
+</body>
+</html>
